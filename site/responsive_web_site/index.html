@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<title>Portugal</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+	</head>
+<body>
+<div class="container-fluid" class="all">
+	<h1>
+		<b>The greatest places in Portugal</b>
+	</h1>
+	<div class="row">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p1">
+		<h2>Coimbra</h2>
+		<img src="coimbra.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name1"> <p>Coimbra is home to a treasure trove of historic sites, beautiful gardens, the country’s second style of fado music, and a lively culture that is centered around one of Europe’s oldest universities.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p2">
+		<h2>Azores</h2>
+		<img src="azores.jpg" class="pic" align="left"></div>
+		<div class="text" class="col-md-6" class="col-sm-12" id="name2"> <p> The Archipelago of the Azores is composed of 9 volcanic islands in the Atlantic Ocean. Renowned for world-class whale watching, hot mineral springs, and quaint seaside towns, each island has its own fascinating identity. </p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p3">
+		<h2>Aveiro</h2>
+		<img src="aveiro.jpg" class="pic" align="left"></div>
+		<div class="text" class="col-md-6" class="col-sm-12" id="name3"> <p>Aveiro is a bustling city often called “the Venice of Portugal” due to its picturesque setting of scenic canals connected by charming bridges and dotted with colorful gondolas and speed boats.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p4">
+		<h2>Evora</h2>
+		<img src="evora.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name4"> <p>Today, Evora is the capital of the Alentejo region, regarded for its well-preserved Old Town, which shelters more than 4,000 historic structures including the old Roman walls and temples.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p5">
+		<h2>Porto</h2>
+		<img src="porto.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name5"> <p>World famous for its production of fine port wine, the busy city of Porto sprawls along the hills overlooking the Douro River in northern Portugal. At the heart of Porto is the charming pedestrian zone, the Ribeira, an atmospheric place on the river, buzzing in live music, cafes, restaurants and street vendors.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p6">
+		<h2>Madeira</h2>
+		<img src="madeira.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name6"> <p>Madeira is a fertile oasis in the Atlantic Ocean between Portugal and North Africa, popular for its lush green landscapes, flower gardens and wines. Must-see places include the Orchid Garden and the Laurissilva Forest, which harbors the world’s largest concentration of laurel.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p7">
+		<h2>Sintra</h2>
+		<img src="sintra.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name7"> <p>Sintra presents a spectacular setting of verdant hills, sprinkled with pretty villas, royal retreats, castles and palaces such as the famous Pena’s Palace, a fantastical castle reminiscent of Germany’s Neuschwanstein.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p8">
+		<h2>Obidos</h2>
+		<img src="obidos.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name8"> <p>Located on a hilltop in the Centro Region of western Portugal, Obidos is encircled by an old fortified wall. Besides the wall, the magnificent medieval castle and historic center of Obidos make up the city’s main attraction and can easily be walked.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p9">
+		<h2>Algarve</h2>
+		<img src="algarve.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name9"> <p>Sunny Mediterranean climate, gorgeous beaches, picturesque towns, historic sites, fabulous cuisine and affordable costs are just some of the reasons that make the Algarve one of the best places to visit in Portugal.</p>
+	</div><br clear="left">
+	<div class="list" class="col-md-6" class="col-sm-12" id="p10">
+		<h2>Lisbon</h2>
+		<img src="lisbon.jpg" class="pic" align="left"></div>
+	<div class="text" class="col-md-6" class="col-sm-12" id="name10"> <p>Portugal’s capital and largest city winds upward among seven steep hills, forming an enchanting destination of warm weather, alluring alleys, quaint shops, Gothic cathedrals, impressive bridges and colorful neighborhoods, reverberating in traditional fado music.</p>
+	</div>
+	</div>
+</div>
+<div id="scrollup"><img alt="Подняться наверх" src="arrow-up.png" width="50%" align="right"></div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#scrollup img').mouseover(function(){
+			$(this).animate({opacity:1},100);
+		}).mouseout(function(){
+			$(this).animate({opacity:0.5},100);
+		}).click(function(){
+			window.scroll(0,0);
+			return false;
+		});
+		$(window).scroll(function(){
+			if($(document).scrollTop()>0){
+				$('#scrollup').fadeIn('fast');
+			} else{
+				$('#scrollup').fadeOut('fast');
+			}
+		});
+	});
+</script>
+</html>

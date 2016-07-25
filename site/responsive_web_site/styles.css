@@ -1,0 +1,59 @@
+*{
+	box-sizing:border-box;
+}
+div.container-fluid{
+	margin: 0px 20px 0px 25px;
+}
+
+div.text{
+	margin: 0px;
+}
+div.row{
+	margin:0px;
+}
+body{
+	margin:0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+h1{
+	font-family:"Palatino Linotype", "Book Antiqua3", Palatino6, serif;
+	text-align: left;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.text{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 0px 10px 0px 10px;
+	text-align: justify;
+	font-size: 20px;
+}
+.pic{
+	width:100%;
+	margin: 0px 8px 0px 0px;
+}
+#scrollup{
+	position:fixed;
+	opacity: 0.5;
+	padding:15px 40px 10px 0px;
+	margin:0px;
+	right:0px;
+	bottom:10px;	
+	cursor:pointer;
+}
+
+.row{
+	width: 100%;
+}
+@media(min-width: 992px){
+	.list{
+		width:70%;
+	}
+}
+
+@media(max-width: 991px){
+	.list{
+		width: 100%;
+	}
+
+}
