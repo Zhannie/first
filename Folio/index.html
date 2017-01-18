@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Folio template">
+    <meta name="keywords" content="Template, CSS, HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="f.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,900" rel="stylesheet">
+	<title>Folio</title>
+	<!--[if IE 7]>
+ <style type="text/css">
+ li{
+ zoom:1;
+ display:inline;
+ }
+ </style>
+<![endif]-->
+</head>
+<body>
+
+		<nav class="nav">
+			<ul>
+				<li><a class="active" href="#home">HOME</a></li>
+				<li><a href="#work">WORK</a></li>
+				<li id="center">FOLIO</li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#about">ABOUT</a></li>
+			</ul>	
+		</nav> 
+		</br>
+
+		<div id="home">
+			<picture>
+			<source media="(max-width:991px)"
+			srcset="mainmobile.jpg">
+			<img id="main" src="main.jpg" alt="main" width="100%">
+			</picture>
+		</div>
+
+		<div id="work">
+			<h2><hr><span>WORK</span></h2>
+
+			<div class="flex-container">
+				<div class="flex-item"><a href=""><img src="1block.jpg"><p>Project name</br><span>Subheading</span></p></a></div>
+				<div class="flex-item"><a href=""><img src="2block.jpeg"><p>Project name</br><span>Subheading</span></p></a></div>
+				<div class="flex-item"><a href=""><img src="3block.png"><p>Project name</br><span>Subheading</span></p></a></div>
+				<div class="flex-item"><a href=""><img src="4block.jpg"><p>Project name</br><span>Subheading</span></p></a></div>
+				<div class="flex-item"><a href=""><img src="5block.jpg"><p>Project name</br><span>Subheading</span></p></a></div>
+				<div class="flex-item"><a href=""><img src="6block.jpg"><p>Project name</br><span>Subheading</span></p></a></div>
+			</div>
+
+		</div>
+
+		<div id="about">
+
+			<h2><hr><span>ABOUT</span></h2>
+			<p>Suspendisse vel leo semper, aliquet risus sed, porta enim. Curabitur euismod lorem ligula.</p>
+			<a href="#">Read more</a>
+			
+		</div>
+
+		<div id="contact">
+			<h2><hr><span>CONTACT</span></h2>
+
+			<div class="block">
+				
+				<p><span>Get in touch.</span> <br></p>
+
+				<p>	
+					Aliquam suscipit, augue id dignissim ultricies, justo massa interdum odio, non dapibus ante metus varius magna. Integer faucibus lacus ac pulvinar volutpat.
+				</p>
+
+				<p><b>ph:</b> +61 467 387 298 <b>e:</b> hello@email.com</p>
+
+				<div id="iconsContact">
+					<a href="http://twitter.com"><img src="twitter.png" title="twitter" height="50px" width="50px"></a>
+					<a href="http://facebook.com"><img src="facebook.png" title="facebook" height="50px" width="50px"></a>
+					<a href="http://instagram.com"><img src="instagram.png" title="instagram" height="50px" width="50px"></a>
+				</div>
+
+			</div>
+
+			<div id="rightpart" class="block">
+
+				<p> I'll get back to you shortly... </p>
+
+				<div id="form">
+				<form>
+					<input type="text" name="Name" placeholder="Name:" required=""><br>
+					<input type="email" name="Email" placeholder="Email:" required=""><br>
+					<textarea placeholder="Message:"></textarea><br>
+					<input type="submit" value="Submit">
+				</form>
+				</div>
+
+			</div>
+
+				<div class="block" id="button">
+	 		     <button id="up"><a href="#main">&uarr;</a></button>
+	 		    </div>
+		</div>
+
+	<footer>
+		<div>
+			<p><b><a href="tel:+61467387298">+61 467 387 298</a> <span>&#8739</span> <a href="mailto:hello@email.com">hello@email.com</a></b></p>
+		</div>
+
+		<div class="icons">
+			<a href="http://twitter.com"><img src="twitter.png" title="twitter" height="15px" width="15px" alt="twitter"></a>
+			<a href="http://facebook.com"><img src="facebook.png" title="facebook" height="15px" width="15px" alt="facebook"></a>
+			<a href="http://instagram.com"><img src="instagram.png" title="instagram" height="15px" width="15px" alt="instagram"></a>
+		</div>
+	</footer>
+
+</body>
+</html>
