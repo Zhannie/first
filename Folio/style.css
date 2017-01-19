@@ -335,15 +335,14 @@ button[type="submit"]:hover {
 	border-color: black;
 	font-size: 25px;
 	background-color: white;
-	margin: auto;
 	cursor: pointer;
+	margin: auto;
 }
 
 #up a{
 	text-decoration: none;
 	color: black;
 	text-align: center;
-	margin: auto;
 }
 
 footer {
