@@ -196,6 +196,10 @@ hr {
 	border: 3px solid black;
 }
 
+#about a:focus {
+	outline: none;
+}
+
 #contact {
 	padding: 45px 0px;
 	height: auto;
@@ -328,6 +332,11 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
 	cursor: pointer;
+	box-shadow: none;
+}
+
+button[type="submit"]:active {
+	outline: none;
 }
 
 #button {
