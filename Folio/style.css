@@ -122,17 +122,18 @@ hr {
 	-webkit-flex-flow:row wrap;
 	justify-content: space-between;
 	align-content: stretch;
+	margin: 0 -10px;
 }
 
 .flex-item {
-	margin-bottom: 35px;
+	margin: 0 10px 35px;
 	position: relative;
-	min-width: 360px;
-	flex: 0 0 330px;
-	-webkit-box-flex: 0 0 330px;
-	-moz-box-flex: 0 0 330px;
-	-webkit-flex: 0 0 330px;
-	-ms-flex: 0 0 330px;
+	width: 370px;
+	flex: 1 1 auto;
+	-webkit-box-flex: 1 1 auto;
+	-moz-box-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
 }
 
 .flex-item img {
@@ -199,6 +200,9 @@ hr {
 
 #about a:focus, #about a:active, #about a:hover {
 	outline: none;
+	-webkit-outline:none;
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
 }
 
 #contact {
