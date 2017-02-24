@@ -605,12 +605,12 @@ footer a {
 	.flex-item {
 	margin: 0 10px 35px;
 	position: relative;
-	width: 50%;
-	flex: 1 1 auto;
-	-webkit-box-flex: 1 1 auto;
-	-moz-box-flex: 1 1 auto;
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
+	width: 40%;
+	flex: 0 1 auto;
+	-webkit-box-flex: 0 1 auto;
+	-moz-box-flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
 }
 }
 
