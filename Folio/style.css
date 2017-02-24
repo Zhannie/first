@@ -198,7 +198,6 @@ hr {
 	text-align: center;
 	letter-spacing: 1px;
 	border: 3px solid black;
-	-webkit-appearance: button;
 }
 
 #about a:focus, #about a:active, #about a:hover {
@@ -341,8 +340,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
 	cursor: pointer;
-	box-shadow: none;
 	outline: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 #button {
@@ -602,6 +601,18 @@ footer a {
 		margin: 20px auto 0px;
 	}
 
+@media screen and (max-width: 767px) and (orientation:landscape) {
+	.flex-item {
+	margin: 0 10px 35px;
+	position: relative;
+	width: 50%;
+	flex: 1 1 auto;
+	-webkit-box-flex: 1 1 auto;
+	-moz-box-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+}
+}
 
 
 
