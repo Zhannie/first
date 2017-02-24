@@ -206,6 +206,7 @@ hr {
 	-webkit-outline:none;
 	-webkit-appearance: none;
 	-webkit-box-shadow: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 #contact {
