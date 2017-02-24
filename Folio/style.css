@@ -121,16 +121,17 @@ hr {
 
 	-webkit-flex-flow:row wrap;
 	justify-content: space-between;
-	align-content: center;
+	align-content: stretch;
 }
 
 .flex-item {
 	margin-bottom: 35px;
 	position: relative;
-	flex: 0.3 0 330px;
+	min-width: 360px;
+	flex: 0 0 330px;
 	-webkit-box-flex: 0 0 330px;
 	-moz-box-flex: 0 0 330px;
-	-webkit-flex: 0 0 360px;
+	-webkit-flex: 0 0 ;
 	-ms-flex: 0 0 330px;
 }
 
@@ -196,7 +197,7 @@ hr {
 	border: 3px solid black;
 }
 
-#about a:focus {
+#about a:focus, #about a:active, #about a:hover {
 	outline: none;
 }
 
@@ -330,12 +331,9 @@ button[type="submit"] {
 	padding: 10px 35px;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
 	cursor: pointer;
 	box-shadow: none;
-}
-
-button[type="submit"]:active {
 	outline: none;
 }
 
