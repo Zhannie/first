@@ -508,14 +508,19 @@ footer a {
     ul.responsive li a{
 	    display:block;
 	    text-decoration:none;
-	    padding:8px 0px;
-	    margin:0px;
-	    font-size: 12px;
+	    padding:10px 0px;
+	    margin:10px 0px 0px;
+	    font-size: 18px;
 	    color:black;
 	    font-weight: 600;
 	    letter-spacing: 3px;
     }
-  
+  	
+  	ul.responsive li:last-child a {
+  		padding:0;
+  		margin-top:15px;
+  	}
+
     ul.responsive li:last-child a:hover {
     	background-color: white;
     }
@@ -528,7 +533,7 @@ footer a {
     }
   
     ul.responsive li[class="icon"] a {
-    	font-size:20px;
+    	font-size:25px;
     }
   	ul.responsive li a[id="center"] {
     	display:none;
