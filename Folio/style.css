@@ -482,6 +482,7 @@ footer a {
  	ul.myNav li a{
     	font-size:25px;
     	padding:0px;
+    	cursor: pointer;
     }
   
   	ul.myNav li a:hover {
@@ -514,6 +515,7 @@ footer a {
 	    color:black;
 	    font-weight: 600;
 	    letter-spacing: 3px;
+	    cursor: pointer;
     }
   	
   	ul.responsive li:last-child a {
