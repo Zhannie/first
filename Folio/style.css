@@ -7,10 +7,10 @@ body{
 	padding: 0;
 	font-family: 'Muli', sans-serif;
 	-webkit-appearance: none;
-	-webkit-text-size-adjust:none;
-	-ms-text-size-adjust:none;
-	-webkit-text-size-adjust:100%;
-	-ms-text-size-adjust:100%;
+	-webkit-font-size-adjust:none;
+	-ms-font-size-adjust:none;
+	-webkit-font-size-adjust:100%;
+	-ms-font-size-adjust:100%;
 }
 
 
