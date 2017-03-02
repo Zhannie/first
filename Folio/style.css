@@ -517,6 +517,10 @@ footer a {
 	    letter-spacing: 3px;
 	    cursor: pointer;
     }
+
+    ul.responsive li:first-child a{
+    	margin-top:45px;
+    }
   	
   	ul.responsive li:last-child a {
   		padding:0;
@@ -541,15 +545,12 @@ footer a {
     	display:none;
   	}
 
-}
-
-
-/*other*/
-
-	.active {
+  	.active {
 		border: none;
 	}
 
+
+/*other*/
 
 	#home {
 		margin-top: 50px;
@@ -557,6 +558,14 @@ footer a {
 
 	#main {
 		width: 100%;
+	}
+
+	#about a:focus, #about a:active, #about a:hover {
+		outline: none;
+		-webkit-outline:none;
+		-webkit-appearance: none;
+		-webkit-box-shadow: none;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
 
 	#about p {
@@ -614,24 +623,39 @@ footer a {
 	button[type="submit"] {
 		margin: 20px auto 0px;
 	}
+
+	button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
+		cursor: pointer;
+		outline: none;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
 }
 
-@media screen and (max-width: 767px) {
-  
-}
 @media screen and (max-width: 767px) and (orientation:landscape) {
+	#about a:focus, #about a:active, #about a:hover {
+		outline: none;
+		-webkit-outline:none;
+		-webkit-appearance: none;
+		-webkit-box-shadow: none;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
 
+	button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
+		cursor: pointer;
+		outline: none;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
 
 	.flex-item {
-	margin: 0 10px 35px;
-	position: relative;
-	width: 40%;
-	flex: 0 1 auto;
-	-webkit-box-flex: 0 1 auto;
-	-moz-box-flex: 0 1 auto;
-	-webkit-flex: 0 1 auto;
-	-ms-flex: 0 1 auto;
-}
+		margin: 0 10px 35px;
+		position: relative;
+		width: 40%;
+		flex: 0 1 auto;
+		-webkit-box-flex: 0 1 auto;
+		-moz-box-flex: 0 1 auto;
+		-webkit-flex: 0 1 auto;
+		-ms-flex: 0 1 auto;
+    }
 }
 
 
