@@ -359,6 +359,7 @@ button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]
 	cursor: pointer;
 	border:none;
 	background-color: white;
+	text-align: center;
 }
 
 #up a{
