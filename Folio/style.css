@@ -477,6 +477,10 @@ footer a {
 	    outline: none;
     }
 
+    nav.ordinary #center{
+    	padding: 15px 0px;
+    }
+
 	.icon::before{
 		content: url(imgs/menu_icon.png);
 	}
