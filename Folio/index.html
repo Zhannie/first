@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Folio template">
-    <meta name="keywords" content="Template, CSS, HTML">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no"/>
-    <link rel="shortcut icon" type="image/png" href="f.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,900" rel="stylesheet">
-	<title>Folio</title>
+	    <meta charset="utf-8">
+	    <title>Folio</title>
+	    <meta name="description" content="Folio template">
+	    <meta name="keywords" content="Template, CSS, HTML">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="shortcut icon" type="image/png" href="f.png">
+	    <link rel="stylesheet" type="text/css" href="reset.css"> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,900" rel="stylesheet">
+		
 	<!--[if IE 7]>
  <style type="text/css">
  li{
@@ -20,29 +21,32 @@
  </style>
 <![endif]-->
 </head>
-<body>
 
-		<nav>
+<body>
+	
+	<header>
+		<nav class="ordinary">
+			<button class="icon" onclick="myFunction()"></button>
 			<ul class="myNav" id="myNav">
 				<li><a class="active" href="#home">HOME</a></li>
 				<li><a href="#work">WORK</a></li>
 				<li><a id="center" href="#home">FOLIO</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 				<li><a href="#about">ABOUT</a></li>
-				<li class="icon" id="icon"><a onclick="myFunction()">&#9776;</a></li>
 			</ul>	
 		</nav> 
+	</header>
 
+	<main>
+
+<!-- 		<div class="sides leftside"></div>
+ -->
 		<div id="home">
-			<picture>
-			<source media="(max-width:991px)"
-			srcset="imgs/mainmobile.jpg">
-			<img id="main" src="imgs/main.jpg" alt="main">
-			</picture>
+
 		</div>
 
 		<div id="work">
-			<h2><hr><span>WORK</span></h2>
+			<h2>WORK</h2>
 
 			<div class="flex-container">
 				<div class="flex-item"><a href=""><img src="imgs/1block.jpg" alt="1block"><p>Project name<br><span>Subheading</span></p></a></div>
@@ -57,30 +61,31 @@
 
 		<div id="about">
 
-			<h2><hr><span>ABOUT</span></h2>
+			<h2>ABOUT</h2>
 			<p>Suspendisse vel leo semper, aliquet risus sed, porta enim. Curabitur euismod lorem ligula.</p>
 			<a href="#">Read more</a>
 			
 		</div>
 
 		<div id="contact">
-			<h2><hr><span>CONTACT</span></h2>
+			<h2>CONTACT</h2>
 
 			<div class="block">
 				
-				<p><span>Get in touch.</span> <br></p>
+				<h3>Get in touch.</h3>
 
 				<p>	
 					Aliquam suscipit, augue id dignissim ultricies, justo massa interdum odio, non dapibus ante metus varius magna. Integer faucibus lacus ac pulvinar volutpat.
 				</p>
 
-				<div class="tel"><p><b>ph:</b> +61 467 387 298 </p></div>
-				<div class="tel"><p><b>e:</b> hello@email.com</p></div>
+				<div class="tel"><a href="tel:+61467387298">+61 467 387 298</a> 
+				<a href="mailto:hello@email.com">hello@email.com</a>
+				</div>
 
 				<div id="iconsContact">
-					<a href="http://twitter.com"><img src="imgs/twitter.png" title="twitter" alt= "twitter" height="50" width="50"></a>
-					<a href="http://facebook.com"><img src="imgs/facebook.png" title="facebook" alt="facebook" height="50" width="50"></a>
-					<a href="http://instagram.com"><img src="imgs/instagram.png" title="instagram" alt="intagram" height="50" width="50"></a>
+					<a href="http://twitter.com"><img src="imgs/twitter.png" title="twitter" alt= "twitter"></a>
+					<a href="http://facebook.com"><img src="imgs/facebook.png" title="facebook" alt="facebook"></a>
+					<a href="http://instagram.com"><img src="imgs/instagram.png" title="instagram" alt="instagram"></a>
 				</div>
 
 			</div>
@@ -100,23 +105,28 @@
 
 			</div>
 
-				<div class="block" id="button">
-	 		     <a id="up" href="#main"><img src="imgs/up.png" alt="up" width="50" height="50"></a>
-	 		    </div>
+	 		     <a id="up" href="#home"></a>
+	 		    
 		</div>
 
+<!-- 		<div class="sides rightside"></div>
+ -->
+	</main>
+
 	<footer>
-		<div>
-			<p><b><a href="tel:+61467387298">+61 467 387 298</a> <span>
-			&#8739;</span> <a href="mailto:hello@email.com">hello@email.com</a></b></p>
+		<div class="tel">
+			<a href="tel:+61467387298">+61 467 387 298</a> <span>
+			&#8739;</span> <a href="mailto:hello@email.com">hello@email.com</a>
 		</div>
 
 		<div class="icons">
-			<a href="http://twitter.com"><img src="imgs/twitter.png" title="twitter" height="15" width="15" alt="twitter"></a>
-			<a href="http://facebook.com"><img src="imgs/facebook.png" title="facebook" height="15" width="15" alt="facebook"></a>
-			<a href="http://instagram.com"><img src="imgs/instagram.png" title="instagram" height="15" width="15" alt="instagram"></a>
+			<a id="tw" href="http://twitter.com"></a>
+			<a id="fb" href="http://facebook.com"></a>
+			<a id="ig" href="http://instagram.com"></a>
 		</div>
 	</footer>
+
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>

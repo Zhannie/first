@@ -1,14 +1,13 @@
 
 
 function myFunction() {
- var x = document.getElementById("myNav");
-  if (x.className === "myNav") {
+ var x = document.querySelector("nav"); 
+  if (x.className === "ordinary") {
     x.className = "responsive";
   } else {
-    x.className ="myNav";
+    x.className ="ordinary";
   };
 }
-
 
 
 

@@ -1,40 +1,38 @@
-* {
-	box-sizing: border-box;
-}
-
 body{
-	margin: 0px 35px;
-	padding: 0;
 	font-family: 'Muli', sans-serif;
-	-webkit-appearance: none;
-	-webkit-font-size-adjust:none;
-	-ms-font-size-adjust:none;
-	-webkit-font-size-adjust:100%;
-	-ms-font-size-adjust:100%;
+	font-size: 16px;
+	font-weight: 400;
 }
 
+/*div.sides {
+	display:block;
+	background-color: white;
+	height: 100%;
+	width: 10px;
+}
 
+.leftside {
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+
+}*/
 
 /*NAVBAR PLUS Folio*/
 
-#formob {
+.icon {
 	display: none;
 }
 
-ul.myNav li.icon {
-	display: none;
-}
-
-ul {
+nav {
 	background-color: white;
 	list-style-type: none;
 	text-align: center;
-	margin: 0 auto;
-	padding: 0px;
 	position:fixed;
 	top:0px;
-	right: 35px;
-	left: 35px;
+	left: 0;
+	right: 0;
 	z-index: 1;
     overflow: hidden;
 }
@@ -66,7 +64,7 @@ li a:hover {
 	background-color: lightgrey;
 }
 
-li a[id="center"]:hover {
+li a#center:hover {
 	background: none;
 }
 
@@ -76,11 +74,11 @@ li a[id="center"]:hover {
 
 
 /*HOME IMAGE*/
-
-#home{
-	margin-top: 50px;
-	width: 100%;
-	height: auto;
+div#home{
+	height: 680px;
+	background: url(imgs/main.png) no-repeat center;
+	background-size:cover;
+	margin-top: 70px;
 }
 
 #main {
@@ -97,17 +95,16 @@ h2{
 	position: relative;
 }
 
+h2::before{
+	content: "";
+	width: 120px;
+	display: inline-block;
+	border-bottom: 2px solid black;
+	vertical-align: middle;
+	margin-right: 5px;
+}
 
 /*WORK SECTION*/
-
-hr {
-	display: inline-block;
-	margin: 0px 5px 0px 0px;
-	height: 3px;
-	vertical-align: middle;
-	background-color: black;
-	width: 120px;
-}
 
 .flex-container {
 	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
@@ -119,7 +116,7 @@ hr {
 	-webkit-flex-flow:row wrap;
 	justify-content: space-between;
 	align-content: stretch;
-	margin: 0 -10px;
+	margin: 0;
 }
 
 .flex-item {
@@ -135,7 +132,6 @@ hr {
 
 .flex-item img {
 	width: 100%;
-	height: 100%;
 }
 
 .flex-item p{
@@ -154,8 +150,8 @@ hr {
 
 .flex-item:hover p {
 	opacity: 1;
-	transition: opacity 0.5s;
-	background:rgba(0,0,0,0.4);
+	transition: opacity .5s;
+	background:rgba(0,0,0,.4);
 }
 
 .flex-item span {
@@ -199,19 +195,10 @@ hr {
 	border: 3px solid black;
 }
 
-#about a:focus, #about a:active, #about a:hover {
-	outline: none;
-	-webkit-outline:none;
-	-webkit-appearance: none;
-	-webkit-box-shadow: none;
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-
-
 
 /*CONTACT SECTION*/
 #contact {
-	padding: 45px 0px;
+	padding: 45px 0px 30px;
 	height: auto;
 }
 
@@ -224,13 +211,14 @@ hr {
 	padding: 120px 40px 0px 110px ;
 }
 
-.block span {
+h3 {
 	font-size: 45px;
 	font-weight: 900;
 	letter-spacing: 1px;
+	padding: 5px 0px 75px;
 }
 
-.block p {
+.block p{
 	padding-bottom: 25px;
 }
 
@@ -239,17 +227,19 @@ hr {
 }
 
 #iconsContact img{
-	background-color: rgba(255,200,185,0.8);
+	background-color: rgba(255,200,185,.8);
 	border-radius: 50%;
 	padding: 10px;
 	margin: 30px 15px 0px 0px;
+	height: 50px;
+	width: 50px;
 }
 
 #rightpart {
 	height: 700px;
-	background-color: rgba(255,200,185,0.8);
+	background-color: rgba(255,200,185,.8);
 	font-weight: 600;
-	margin-top: -100px;
+	margin: -100px 0px 30px;
 }
 
 #rightpart p {
@@ -267,29 +257,29 @@ hr {
 :focus:-ms-input-placeholder      {color: black}
 
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder 
-{opacity: 0; transition: opacity 0.4s ease;}
+{opacity: 0; transition: opacity .4s ease;}
 input:hover::-moz-placeholder, textarea:hover::-moz-placeholder
-{opacity: 0; transition: opacity 0.4s ease;}
+{opacity: 0; transition: opacity .4s ease;}
 input:hover:-moz-placeholder, textarea:hover:-moz-placeholder
-{opacity: 0; transition: opacity 0.4s ease;}
+{opacity: 0; transition: opacity .4s ease;}
 input:hover:-ms-input-placeholder, textarea:hover:-ms-placeholder
-{opacity: 0; transition: opacity 0.4s ease;}
+{opacity: 0; transition: opacity .4s ease;}
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
-{opacity: 1; transition: opacity 0.4s ease;}
+{opacity: 1; transition: opacity .4s ease;}
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder         
-{opacity: 1; transition: opacity 0.4s ease;}
+{opacity: 1; transition: opacity .4s ease;}
 input:focus:-moz-placeholder, textarea:focus:-moz-placeholder       
-{opacity: 1; transition: opacity 0.4s ease;}
+{opacity: 1; transition: opacity .4s ease;}
 input:focus:-ms-input-placeholder, textarea:focus:-ms-placeholder    
-{opacity: 1; transition: opacity 0.4s ease;}
+{opacity: 1; transition: opacity .4s ease;}
 
 input[type="text"]{
 	width: 70%;
 	padding: 20px 0px;
 	border: none;
 	border-bottom: 2px solid white;
-	background-color: rgba(255,200,185,0.01);
+	background-color: rgba(255,200,185,.01);
 	font-size: 16px;
 	font-weight: 600;
 }
@@ -299,7 +289,7 @@ input[type="email"]{
 	padding: 20px 0px;
 	border: none;
 	border-bottom: 2px solid white;
-	background-color: rgba(255,200,185,0.01);
+	background-color: rgba(255,200,185,.01);
 	font-size: 16px;
 	font-weight: 600;
 }
@@ -308,7 +298,7 @@ textarea{
 	width: 70%;
 	border: none;
 	border-bottom: 2px solid white;
-	background-color: rgba(255,200,185,0.01);
+	background-color: rgba(255,200,185,.01);
 	font-size: 16px;
 	font-weight: 600;
 	padding: 20px 0px 0px;
@@ -330,7 +320,7 @@ input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
 
 button[type="submit"] {
 	-webkit-appearance: none;
-	background-color: rgba(255,200,185,0.01);
+	background-color: rgba(255,200,185,.01);
 	margin: 40px 0px; 
 	border: 3px solid white;
 	color: white;
@@ -346,26 +336,16 @@ button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
-#button {
+
+a#up{
+	padding: 40px 0px 0px;
 	clear: both;
-	padding: 8px 0px 30px;
-	margin-top: 20px;
-	width: 100%;
-}
-
-#up {
+	margin: 0px 605px;
 	display: block;
-	margin: auto;
 	cursor: pointer;
-	border:none;
-	background-color: white;
-	text-align: center;
-}
-
-#up a{
 	text-decoration: none;
+	background: url(imgs/up.png) no-repeat center;
 }
-
 
 
 /*FOOTER*/
@@ -373,7 +353,7 @@ button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]
 footer {
 	background-color: black; 
 	padding: 40px 0px;
-	margin: 0px -35px;
+	margin: 0px;
 	clear: both;
 
 }
@@ -382,15 +362,44 @@ footer {
 	padding: 15px 0px 0px 0px;
 }
 
-footer div img {
-	margin: 0px 5px;
+.icons a{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
 }
 
-footer div p {
+a#tw {
+	background: url(imgs/twitter.png) no-repeat center;
+	background-size: 15px;
+}
+
+a#fb{
+	background: url(imgs/facebook.png) no-repeat center;
+	background-size: 15px;
+}
+
+a#ig{
+	background: url(imgs/instagram.png) no-repeat center;
+	background-size: 15px;
+}
+
+div.tel {
+	display: block;
 	color: white;
-	text-align: center;
 	font-size: 12px;
 	letter-spacing: 1px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.block div.tel{
+	text-align: left;
+}
+
+.block .tel a {
+	text-decoration: none;
+	color: black;
+	padding-right: 10px;
 }
 
 footer a {
@@ -409,6 +418,12 @@ footer a {
 
 	#center {
 		padding:10px 35px; 
+	}
+
+	div#home{
+		background: url(imgs/mainmobile.jpg) no-repeat center;
+		background-size:cover;
+		height: 450px;
 	}
 
 	#about p {
@@ -439,76 +454,49 @@ footer a {
 /*MOBILE - menu, contact section block*/
 
 @media screen and (max-width: 767px) {
-	body {
-		margin: 0px 15px;
-	}
-
 	footer {
 		margin: -15px;
 	}
 
 /*navbar*/
-	
-	ul.myNav {
-		left:15px;
-    	right:15px;
-    }
-  
-  	ul.myNav li {
-    	display:inline-block;
-    	left: 0;
-		right: 0;
-   		padding:0px;
-    }
-  
-  	ul.myNav li a {  
-  		padding:10px 0px;
-    	margin:0px;
-    }
-  
   	.active {
 		border: none;
 	}
-  
-  	ul.myNav li:not(:nth-child(3)) {
+    
+  	nav.ordinary ul li:not(:nth-child(3)) {
     	display:none;
     }
-  
- 	ul.myNav li.icon {
-		display: block;
+
+    nav.ordinary .icon {
+    	display: block;
 		float: right;
-    	margin-top:15px;
-	}
-  
- 	ul.myNav li a{
-    	font-size:25px;
-    	padding:0px;
-    	cursor: pointer;
-    }
-  
-  	ul.myNav li a:hover {
-    	background-color:white;
+	    margin:12px 6px 0px 0px;
+	    background-color: white;
+	    border: none;
+	    cursor: pointer;
+	    outline: none;
     }
 
-	
-	ul.responsive {
-    	background-color:white;
+    nav.ordinary #center{
+    	margin-left: 48px;
+    }
+
+	.icon::before{
+		content: url(imgs/menu_icon.png);
+	}
+
+	nav.responsive ul{
     	list-style-type: none;
 	    text-align: center;
     	margin:0px auto;
     	padding:0px;
-    	position:fixed;
-    	right:0;
-    	left:0;
-    	z-index: 1;
     }
   
-    ul.responsive li {
-    	display:block;
+    nav.responsive ul li {
+    	 display: block;
     }
   
-    ul.responsive li a{
-	    display:block;
+    nav.responsive ul li a{
 	    text-decoration:none;
 	    padding:10px 0px;
 	    margin:10px 0px 0px;
@@ -518,55 +506,34 @@ footer a {
 	    letter-spacing: 3px;
 	    cursor: pointer;
     }
-
-    ul.responsive li:first-child a{
-    	margin-top:45px;
-    }
   	
-  	ul.responsive li:last-child a {
-  		padding:0;
-  		margin-top:15px;
-  	}
+    nav.responsive ul li:first-child{
+    	margin-top: 45px;
+    }
+ 
+    nav.responsive .icon {
+    	display: block;
+		float: right;
+		margin:12px 6px 0px 0px;
+	    background-color: transparent;
+	    border: none;
+	    outline: none;
+	    cursor: pointer;
+    }
 
-    ul.responsive li:last-child a:hover {
-    	background-color: white;
-    }
-  
-  	ul.responsive li.icon {
-    	position:absolute;
-    	right:0;
-    	top:0;
-    	margin-right:15px;
-    }
-  
-    ul.responsive li[class="icon"] a {
-    	font-size:25px;
-    }
-  	ul.responsive li a[id="center"] {
+  	nav.responsive ul li a#center {
     	display:none;
   	}
 
-  	.active {
-		border: none;
-	}
-
-
+  
 /*other*/
-
-	#home {
+	div#home{
 		margin-top: 50px;
+		height: 350px;
 	}
 
 	#main {
 		width: 100%;
-	}
-
-	#about a:focus, #about a:active, #about a:hover {
-		outline: none;
-		-webkit-outline:none;
-		-webkit-appearance: none;
-		-webkit-box-shadow: none;
-		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
 
 	#about p {
@@ -586,12 +553,9 @@ footer a {
 		width: 100%;	
 		padding: 0px 20px 0px 30px ;
 	}
-	 .block p {
-		padding-bottom: 5px;
-	}
 
-	.block span {
-		font-size: 25px;
+	h3, .block p, .tel{
+		padding-bottom: 20px;
 	}
 
 	#iconsContact img{
