@@ -9,14 +9,6 @@ div.sides {
 	padding: 0px 35px 0px 35px;
 }
 
-/*.leftside {
-	position: absolute;
-	left:0;
-	top: 0;
-	bottom: 0;
-
-}*/
-
 /*NAVBAR PLUS Folio*/
 
 .icon {
@@ -458,6 +450,10 @@ footer a {
 @media screen and (max-width: 767px) {
 	footer {
 		margin: -15px;
+	}
+
+	div.sides {
+		display: none;
 	}
 
 /*navbar*/
