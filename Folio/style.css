@@ -453,7 +453,7 @@ footer a {
 	}
 
 	div.sides {
-		display: none;
+		padding: 0px;
 	}
 
 /*navbar*/
