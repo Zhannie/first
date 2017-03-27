@@ -467,6 +467,10 @@ footer a {
     	display:none;
     }
 
+    nav.ordinary ul li:nth-child(3){
+    	float: left;
+    }
+
     nav.ordinary .icon {
     	display: block;
 		float: right;
@@ -479,6 +483,7 @@ footer a {
 
     nav.ordinary #center{
     	padding: 15px 0px;
+
     }
 
 	.icon::before{
