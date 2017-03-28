@@ -13,7 +13,7 @@ but.addEventListener('blur', myFunction);
 
 // }
 
-var y = document.querySelectorAll(".myNav li a");
+var y = document.querySelectorAll("nav li a");
 for (var i = 0; i < y.length; i++) {
 		y[i].addEventListener('click', menuClick);
 	};
