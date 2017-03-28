@@ -49,6 +49,7 @@ Remove gaps in links underline in iOS 8+ and Safari 8+.*/
 a {
   background-color: transparent; 
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 
 a:focus, a:active, a:hover {

@@ -1,3 +1,4 @@
+/*Total page*/
 body{
 	font-family: 'Muli', sans-serif;
 	font-size: 16px;
@@ -9,80 +10,9 @@ div.sides {
 	padding: 0px 35px 0px 35px;
 }
 
-/*NAVBAR PLUS Folio*/
-
-.icon {
-	display: none;
-}
-
-nav {
-	background-color: white;
-	list-style-type: none;
-	text-align: center;
-	position:fixed;
-	top:0px;
-	left: 0;
-	right: 0;
-	z-index: 1;
-    overflow: hidden;
-}
-
-li {
-	display: inline-block;
-	text-align: center;
-}
-
-li a {
-	display: block;
-	padding: 25px;
-	margin: 0px 10px;
-	text-decoration: none;
-	font-size: 11px;
-	color:black;
-	font-weight: 600;
-	letter-spacing: 3px;
-}
-
-#center {
-	padding:15px 100px; 
-	font-size: 25px;
-	font-weight: 900;
-	letter-spacing: 8px;
-}
-
-li a:hover {
-	background-color: lightgrey;
-}
-
-li a#center:hover {
-	background: none;
-}
-
-.active {
-	border-bottom: 4px solid black;
-}
-
-
-/*HOME IMAGE*/
-div#home{
-	height: 680px;
-	background: url(imgs/main.png) no-repeat center;
-	background-size:cover;
-	margin-top: 70px;
-}
-
-#main {
-	width: 100%;
-}
-
 h2{
-	font-weight: 900;
-	font-size: 16px;
-	margin: auto;
 	padding: 35px 0px; 
 	letter-spacing: 3px;
-	text-align: center;
-	position: relative;
 }
 
 h2::before{
@@ -93,6 +23,91 @@ h2::before{
 	vertical-align: middle;
 	margin-right: 5px;
 }
+
+#center, #about p{
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.flex-item span, input, textarea, nav.responsive ul li a{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#about a, button[type="submit"]{
+	font-size: 14px;
+}
+
+li a, #about a, #rightpart, footer div.tel{
+	font-weight: 600;
+}
+
+.flex-item p, h2, h3 {
+	font-weight: 900;
+}
+
+h2, nav, .flex-item p, #about p, #about a, block div.tel, a#up, .icons, 
+footer div.tel, nav.responsive ul, #form {
+	text-align: center;
+}
+
+a#up, nav.ordinary .icon, nav.responsive .icon, nav.responsive ul li a, {
+	cursor: pointer;
+}
+
+
+/*NAVBAR PLUS Folio*/
+.icon {
+	display: none;
+}
+
+nav {
+	background-color: white;
+	position:fixed;
+	top:0px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+    overflow: hidden;
+}
+
+li {
+	display: inline-block;
+}
+
+li a {
+	display: block;
+	padding: 25px;
+	margin: 0px 10px;
+	font-size: 11px;
+	color:black;
+	letter-spacing: 3px;
+}
+
+#center {
+	padding:15px 100px; 
+	letter-spacing: 8px;
+}
+
+li:not(:nth-child(3)) a:hover {
+	background-color: lightgrey;
+}
+
+.active {
+	border-bottom: 4px solid black;
+}
+
+
+
+/*HOME IMAGE*/
+div#home{
+	height: 680px;
+	background: url(imgs/main.png) no-repeat center;
+	background-size:cover;
+	margin-top: 70px;
+}
+
+
 
 /*WORK SECTION*/
 
@@ -127,10 +142,7 @@ h2::before{
 .flex-item p{
 	position: absolute;
 	font-size: 35px; 
-	font-weight: 900;
-	margin: auto;
 	padding-top: 140px;
-	text-align: center;
 	color: white;
 	opacity: 0;
 	top: 0px;
@@ -144,15 +156,8 @@ h2::before{
 	background:rgba(0,0,0,.4);
 }
 
-.flex-item span {
-	font-size: 18px;
-	font-weight: 600;
-}
-
-
 
 /*ABOUT SECTION*/
-
 #about {
 	background-color: #dff9ef;
 	height: auto;
@@ -160,30 +165,23 @@ h2::before{
 }
 
 #about p {
-	font-weight: 900;
 	font-size: 46px;
 	letter-spacing: 1px;
 	line-height: 70px;
-	text-align: center;
 	height: 400px;
-	width: auto;
-	margin:auto;
 	padding: 70px 80px 0px;
 }
 
 #about a{
-	text-decoration: none;
 	display: block;
 	padding: 15px;
 	width: 175px;
 	margin: auto;
-	font-size: 14px;
-	font-weight: 600;
 	color: black;
-	text-align: center;
 	letter-spacing: 1px;
 	border: 3px solid black;
 }
+
 
 
 /*CONTACT SECTION*/
@@ -196,14 +194,11 @@ h2::before{
 	display: inline-block;
 	float: left;
 	width: 50%;
-	font-size: 16px;
-	font-weight: 200;
 	padding: 120px 40px 0px 110px ;
 }
 
 h3 {
 	font-size: 45px;
-	font-weight: 900;
 	letter-spacing: 1px;
 	padding: 5px 0px 75px;
 }
@@ -212,8 +207,13 @@ h3 {
 	padding-bottom: 25px;
 }
 
-.tel {
+.block div.tel{
 	display: inline-block;
+}
+
+.block .tel a {
+	color: black;
+	padding-right: 10px;
 }
 
 #iconsContact img{
@@ -221,18 +221,15 @@ h3 {
 	border-radius: 50%;
 	padding: 10px;
 	margin: 30px 15px 0px 0px;
-	height: 50px;
-	width: 50px;
 }
 
 #rightpart {
 	height: 700px;
 	background-color: rgba(255,200,185,.8);
-	font-weight: 600;
 	margin: -100px 0px 30px;
 }
 
-#rightpart p {
+#rightpart p{
 	margin-top: 140px;
 }
 
@@ -264,57 +261,33 @@ input:focus:-moz-placeholder, textarea:focus:-moz-placeholder
 input:focus:-ms-input-placeholder, textarea:focus:-ms-placeholder    
 {opacity: 1; transition: opacity .4s ease;}
 
-input[type="text"]{
-	width: 70%;
-	padding: 20px 0px;
+input, textarea{
 	border: none;
 	border-bottom: 2px solid white;
-	background-color: rgba(255,200,185,.01);
-	font-size: 16px;
-	font-weight: 600;
-}
-
-input[type="email"]{
 	width: 70%;
-	padding: 20px 0px;
-	border: none;
-	border-bottom: 2px solid white;
 	background-color: rgba(255,200,185,.01);
-	font-size: 16px;
-	font-weight: 600;
+	padding: 20px 0px;
 }
 
 textarea{
-	width: 70%;
-	border: none;
-	border-bottom: 2px solid white;
-	background-color: rgba(255,200,185,.01);
-	font-size: 16px;
-	font-weight: 600;
 	padding: 20px 0px 0px;
 	height: 100px;
 	text-align: justify;
 	overflow-wrap: break-word;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input:focus, textarea:focus,
+input:hover, textarea:hover {
 	border-color: black;
 	outline:none;
 	color: black;
 }
 
-input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
-	border-color: black;
-	outline:none;
-}
-
 button[type="submit"] {
-	-webkit-appearance: none;
 	background-color: rgba(255,200,185,.01);
 	margin: 40px 0px; 
 	border: 3px solid white;
 	color: white;
-	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	padding: 10px 35px;
@@ -323,18 +296,16 @@ button[type="submit"] {
 button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
 	cursor: pointer;
 	outline: none;
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 
+
+/*BUTTON UP*/
 a#up{
 	padding: 15px 0px 0px;
 	clear: both;
 	margin: 0px auto;
 	display: block;
-	cursor: pointer;
-	text-decoration: none;
-	text-align: center;
 }
 
 a#up::before{
@@ -342,17 +313,14 @@ a#up::before{
 }
 
 
-/*FOOTER*/
 
+/*FOOTER*/
 footer {
 	background-color: black; 
 	padding: 40px 0px;
 	margin: 0px;
-	clear: both;
-
 }
 .icons {
-	text-align: center;
 	padding: 15px 0px 0px 0px;
 }
 
@@ -377,35 +345,29 @@ a#ig{
 	background-size: 15px;
 }
 
-div.tel {
+footer div.tel {
 	display: block;
 	color: white;
 	font-size: 12px;
 	letter-spacing: 1px;
-	font-weight: 600;
-	text-align: center;
-}
-
-.block div.tel{
-	text-align: left;
-}
-
-.block .tel a {
-	text-decoration: none;
-	color: black;
-	padding-right: 10px;
 }
 
 footer a {
-	text-decoration: none;
 	color: white;
 }
 
 
 
 /*TABLET - narrow nav, smaller text*/
-
 @media screen and (max-width: 991px) and (min-width: 768px) {
+	div#home{
+		background: url(imgs/mainmobile.jpg) no-repeat center;
+		background-size:cover;
+		height: 450px;
+	}
+
+
+/*NAVBAR*/
 	li a {
 		margin: 0px;
 	}
@@ -414,26 +376,20 @@ footer a {
 		padding:10px 35px; 
 	}
 
-	div#home{
-		background: url(imgs/mainmobile.jpg) no-repeat center;
-		background-size:cover;
-		height: 450px;
-	}
 
+/*ABOUT ECTION*/
 	#about p {
 		font-size: 40px;
 	}
 
+
+/*CONTACT SECTION*/
 	#contact {
 		padding: 45px 0px 20px;
 	}
 
 	.block {
 		padding: 60px 20px 0px 55px ;
-	}
-
-	.block span {
-		font-size: 30px;
 	}
 
 	#rightpart {
@@ -445,19 +401,34 @@ footer a {
 	}
 }
 
-/*MOBILE - menu, contact section block*/
 
+
+/*MOBILE - menu, contact section block*/
 @media screen and (max-width: 767px) {
-	footer {
-		margin: -15px;
+	div#home{
+		margin-top: 50px;
+		height: 350px;
 	}
 
 	div.sides {
 		padding: 0px;
 	}
 
-/*navbar*/
-  	.active {
+
+/*NAVBAR*/
+	.icon::before{
+		content: url(imgs/menu_icon.png);
+	}
+
+	nav.ordinary .icon {
+    	display: block;
+		float: right;
+	    margin:12px 25px 0px 0px;
+	    background-color: white;
+	    outline: none;
+    }
+
+  	.active, nav.ordinary .icon {
 		border: none;
 	}
     
@@ -470,28 +441,25 @@ footer a {
     	margin-left: 25px;
     }
 
-    nav.ordinary .icon {
+    nav.ordinary #center{
+    	padding: 15px 0px;
+    }
+
+/*RESPONSIVE NAVBAR*/
+	nav.responsive .icon {
     	display: block;
 		float: right;
-	    margin:12px 25px 0px 0px;
-	    background-color: white;
+		margin:12px 25px 0px 0px;
+	    background-color: transparent;
 	    border: none;
-	    cursor: pointer;
 	    outline: none;
     }
 
-    nav.ordinary #center{
-    	padding: 15px 0px;
-
-    }
-
-	.icon::before{
-		content: url(imgs/menu_icon.png);
-	}
+  	nav.responsive ul li a#center {
+    	display:none;
+  	}
 
 	nav.responsive ul{
-    	list-style-type: none;
-	    text-align: center;
     	margin:0px auto;
     	padding:0px;
     }
@@ -501,59 +469,44 @@ footer a {
     }
   
     nav.responsive ul li a{
-	    text-decoration:none;
 	    padding:10px 0px;
 	    margin:10px 0px 0px;
-	    font-size: 18px;
 	    color:black;
-	    font-weight: 600;
 	    letter-spacing: 3px;
-	    cursor: pointer;
     }
   	
     nav.responsive ul li:first-child{
     	margin-top: 45px;
     }
  
-    nav.responsive .icon {
-    	display: block;
-		float: right;
-		margin:12px 25px 0px 0px;
-	    background-color: transparent;
-	    border: none;
-	    outline: none;
-	    cursor: pointer;
-    }
-
-  	nav.responsive ul li a#center {
-    	display:none;
-  	}
-
-  
-/*other*/
-	div#home{
-		margin-top: 50px;
-		height: 350px;
+      
+/*WORK SECTION*/
+	.flex-container {
+		justify-content: space-around;
 	}
 
-	#main {
-		width: 100%;
+	.flex-item p{
+		padding-top: 60px;
 	}
 
-	#about p {
-		font-size: 25px;
+
+/*ABOUT SECTION*/
+	#about {
 		padding: 10px 20px 30px;
 		line-height: 50px;
 		height: auto;
 	}
 
-	.flex-container {
-		justify-content: space-around;
+	#about p{
+		font-size: 35px;
+		padding: 10px;
+		height: auto;
 	}
 
+
+/*CONTACT SECTION*/
 	.block {
 		display: block;
-		clear: both;
 		width: 100%;	
 		padding: 0px 20px 0px 30px ;
 	}
@@ -572,7 +525,6 @@ footer a {
 
 	#rightpart {
 		height: auto;
-		font-weight: 600;
 		margin-top: 20px;
 		padding: 30px 20px;
 	}
@@ -581,40 +533,25 @@ footer a {
 		margin: 30px 35px 10px;
 	}
 
-	input[type="text"], input[type="email"], textarea {
+	input, textarea {
 		width: 90%;
-	}
-
-	#form {
-		text-align: center;
 	}
 
 	button[type="submit"] {
 		margin: 20px auto 0px;
 	}
 
-	button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
-		cursor: pointer;
-		outline: none;
-		-webkit-tap-highlight-color:rgba(0,0,0,0);
+
+/*FOOTER*/
+	footer {
+		margin: -15px;
 	}
 }
 
+
+
+/*MOBILE LANDSCAPE*/
 @media screen and (max-width: 767px) and (orientation:landscape) {
-	#about a:focus, #about a:active, #about a:hover {
-		outline: none;
-		-webkit-outline:none;
-		-webkit-appearance: none;
-		-webkit-box-shadow: none;
-		-webkit-tap-highlight-color:rgba(0,0,0,0);
-	}
-
-	button[type="submit"]:hover, button[type="submit"]:active, button[type="submit"]:focus {
-		cursor: pointer;
-		outline: none;
-		-webkit-tap-highlight-color:rgba(0,0,0,0);
-	}
-
 	.flex-item {
 		margin: 0 10px 35px;
 		position: relative;
