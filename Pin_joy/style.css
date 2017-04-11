@@ -108,15 +108,39 @@ a.tel::before {
 	margin-top: 40px;
 }
 
-#catalogue img {
+div.row div.mini img {
+	width: 60px;
+	height: 60px;
+	transform: scale(1,1);
+}
+
+div.row div.mini {
+	padding:0px 5px 10px;
+}
+
+div.row div.mini img:hover {
+	-webkit-transform: scale(5,5);
+	-moz-transform: scale(5,5);
+    -o-transform: scale(5,5);
+	transform: scale(5,5);
+	transition:all .3s ease-in-out;
+}
+
+div.row div.mini:hover {
+	z-index: 10;
+}
+
+div.row div.full img {
+	height: 230px;
 	width: 230px;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
 }
 
-div.row div {
-	padding-bottom: 15px;
-}
-
-.infobtn a{
+.infobtn {
 	color: darkslategray;
 	text-decoration: none;
 	font-size: 25px;
