@@ -145,7 +145,7 @@ div#catalogue {
 	margin-top: 5%;
 }
 
-a.hex {
+div.hex {
 	display: block;
 	position: relative;
 	float: left;
@@ -157,7 +157,7 @@ a.hex {
 	overflow: hidden;
 }
 
-a.hex:hover {
+div.hex:hover, div.hex:active {
 	opacity: 1;
 	transform: scale(2.5,2.5); 
 	transition-duration: 200ms;
@@ -291,7 +291,7 @@ a.instmini::after {
 		max-height: 75px;
 	}
 
-	a.hex {
+	div.hex {
 		width: 85px;
 		height: 65px;
 	}
@@ -349,7 +349,10 @@ a.instmini::after {
 	.pool .honeycomb .column:nth-child(5) {
 		margin-top: 0px;
 		float: right;
+	}
 
+	div.hex:hover, div.hex:active {
+		transform: scale(1.5,1.5);
 	}
 
 }
