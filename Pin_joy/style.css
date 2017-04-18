@@ -107,7 +107,7 @@ div#catalogue {
 .pool {
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 	overflow: hidden;
 	width: 100%;
 	z-index: 10;
@@ -329,7 +329,7 @@ a.instmini::after {
 		padding: 40px;
 	}
 
-	#about {
+	#about, .cat {
 		font-size: 20px;
 		line-height: 35px;
 	}
@@ -342,12 +342,6 @@ a.instmini::after {
 		margin-left: 40px;
 	}
 
-	/*.pool .honeycomb .column.mobgap {
-		display: block;
-		
-		
-	}
-/**/
 	.pool .honeycomb .column {
 		width: 25%;
 	}

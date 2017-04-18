@@ -9,7 +9,10 @@ function menuClick(){
 	}
 };
 
-
+var z = document.querySelectorAll("a.hex");
+for (var i = 0; i < z.length; i++) {
+	z[i].addEventListener('click', function(){});
+}
 
 
 
