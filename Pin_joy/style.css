@@ -94,7 +94,7 @@ div.start .row {
 
 .right button {
 	margin: 0 auto;
-	background-color: rgba(247,247,95,.65);
+	background-color: rgba(48,182,169,.8);
 }
 
 .right button a {
@@ -102,6 +102,7 @@ div.start .row {
 	text-decoration: none;
 	cursor: pointer;
 	font-size: 25px;
+	color: black;
 }
 
 
@@ -197,9 +198,9 @@ div.hex:hover, div.hex:active {
 }
 
 .infobtn {
-	color: darkslategray;
+	color: black;
 	font-size: 25px;
-	background-color: rgba(247,247,95,.8);
+	background-color:rgba(48,182,169,.8);
 	margin: 20px 0px;
 }
 
@@ -380,7 +381,7 @@ a.instmini::after {
 	}
 
 	.right {
-		padding: 40px;
+		padding: 25px;
 	}
 
 	#about, .cat {
