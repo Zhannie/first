@@ -1,17 +1,18 @@
+var x = document.querySelector("nav"),
+ 	z = document.querySelector("div.overlay");
+
 function myFunction() {
- var x = document.querySelector("nav"); 
   if (x.className === "ordinary") {
     x.className = "responsive";
+    z.className = "responsive";
   } else {
-    x.className ="ordinary";
+    x.className = "ordinary";
+    z.className = "overlay";
   };
 }
 
-var but = document.querySelector(".icon");
-but.addEventListener('blur', myFunction);
-// function menuHide() {
+z.addEventListener('click', function(){x.className="ordinary"; z.className = "overlay";});
 
-// }
 
 var y = document.querySelectorAll("nav li a");
 for (var i = 0; i < y.length; i++) {

@@ -163,12 +163,13 @@ div.hex {
 	text-align: center;
 	margin: 10%;
 	overflow: hidden;
+	transition-duration: 200ms;
+
 }
 
 div.hex:hover, div.hex:active {
 	opacity: 1;
 	transform: scale(2.5,2.5); 
-	transition-duration: 200ms;
 	z-index: 1;
 }
 

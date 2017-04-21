@@ -10,6 +10,10 @@ div.sides {
 	padding: 0px 35px 0px 35px;
 }
 
+div.overlay {
+	background-color: none;
+}
+
 h2{
 	padding: 35px 0px; 
 	letter-spacing: 3px;
@@ -216,11 +220,8 @@ h3 {
 	padding-right: 10px;
 }
 
-#iconsContact img{
-	background-color: rgba(255,200,185,.8);
-	border-radius: 50%;
-	padding: 10px;
-	margin: 30px 15px 0px 0px;
+div#iconsContact {
+	height: 60px;
 }
 
 #rightpart {
@@ -426,6 +427,7 @@ footer a {
 	    margin:12px 25px 0px 0px;
 	    background-color: white;
 	    outline: none;
+	    cursor: pointer;
     }
 
   	.active, nav.ordinary .icon {
@@ -446,6 +448,16 @@ footer a {
     }
 
 /*RESPONSIVE NAVBAR*/
+	div.responsive {
+		background-color: lightgray;
+		opacity: .4;
+		z-index: 9998;
+	}
+
+	nav.responsive {
+		z-index:9999;
+	}
+
 	nav.responsive .icon {
     	display: block;
 		float: right;
@@ -453,6 +465,7 @@ footer a {
 	    background-color: transparent;
 	    border: none;
 	    outline: none;
+	    cursor: pointer;
     }
 
   	nav.responsive ul li a#center {
@@ -503,6 +516,10 @@ footer a {
 		height: auto;
 	}
 
+	#about a {
+		padding: 0px;
+	}
+
 
 /*CONTACT SECTION*/
 	.block {
@@ -540,14 +557,6 @@ footer a {
 	button[type="submit"] {
 		margin: 20px auto 0px;
 	}
-
-
-/*FOOTER*/
-	footer {
-		margin: -15px;
-	}
-}
-
 
 
 /*MOBILE LANDSCAPE*/
