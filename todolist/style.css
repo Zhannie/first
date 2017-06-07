@@ -17,7 +17,7 @@ header {
 
 /*main container*/
 .container {
-	height: 50vh;
+	height: 60vh;
 	overflow: scroll;
 	border: 1px solid black;
 }
@@ -49,6 +49,10 @@ ul.todo li p.right, button.right, select.right {
 	float: right;
 }
 
+ul.todo li p.descr {
+	display: block;
+}
+
 button.left {
 	float: left;
 }
@@ -67,12 +71,16 @@ ul.todo button {
 
 /*new task container*/
 .new {
-	display: block;
+	display: none;
 	border: 1px solid black;
 	text-align: center;
 }
 
-form div {
+.form {
+	padding: 10px;
+}
+
+.form div {
 	margin-top: 5px;
 }
 
@@ -90,7 +98,7 @@ input, select, textarea {
 	border: 1px solid black;
 }
 
-form button, .filter button, .filter select {
+.form button, .filter button, .filter select, .filter input {
 	padding: 8px;
 	margin: 5px;
 	background-color: white;
@@ -104,14 +112,21 @@ form button, .filter button, .filter select {
 
 .filter {
 	text-align: center;
+	height: 50px;
 }
 
-.filter button, .filter select{
+.filter button, .filter select {
 	width: 30%;
 }
 
 .filter select {
 	height: 30px;
+}
+
+.filter input {
+	width: 10px;
+	line-height: 30px;
+	vertical-align: middle;
 }
 
 
