@@ -1,2 +1,2 @@
 # first
-coursera, portfolio
+coursera tasks, first portfolio
